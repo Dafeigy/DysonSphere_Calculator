@@ -1,6 +1,6 @@
 import json
-import os
 import ctypes, sys
+from collections import OrderedDict
 
 STD_INPUT_HANDLE = -10
 STD_OUTPUT_HANDLE = -11
@@ -206,7 +206,7 @@ def printYellowRed(mess):
     resetColor()
 
 
-##############################################################
+##################################################################################
 
 
 recipes = json.load(open(r'basic.json', 'r', encoding='utf-8'))
@@ -214,17 +214,17 @@ advanced_recipes = json.load(open('Formula.json', 'r', encoding='utf-8'))
 built_by = json.load(open('built_by.json', 'r', encoding='utf-8'))
 
 #
-ignore_list = ["处理器", "硫酸"]
+igo = ["处理器", "硫酸"]
 
 
-def use_advanced_recipe(name):
+def advanced_recipes(name):
     recipes[name] = advanced_recipes[name]
 
 
-use_advanced_recipe("碳纳米管")
-use_advanced_recipe("石墨烯")
-use_advanced_recipe("硫酸")
-use_advanced_recipe("有机晶体")
+advanced_recipes("碳纳米管")
+advanced_recipes("石墨烯")
+advanced_recipes("硫酸")
+advanced_recipes("有机晶体")
 
 
 def search_recipe(name, pcs, result, parent):
@@ -236,11 +236,11 @@ def search_recipe(name, pcs, result, parent):
             result[name]["dest"] = set()
         result[name]["pcs"] += pcs
         result[name]["dest"].add(parent)
-        if "end" in entry or name in ignore_list:
+        if "end" in entry or name in igo:
             return
         else:
-            for k, i in entry["req_item"].items():
-                search_recipe(k, pcs * i, result, name)
+            for i,j in entry["req_item"].items():
+                search_recipe(i, pcs * j, result, name)
             return
     printYellowRed("⚠输入字符非法，请重新输入⚠")
 
@@ -250,8 +250,6 @@ def depend(parent_name, child_name):
     search_recipe(parent_name, 1, result, "")
     return (child_name in result)
 
-
-from collections import OrderedDict
 
 
 def main():
