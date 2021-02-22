@@ -12,7 +12,7 @@
     <a href="https://github.com/Dafeigy/Wireless-Calculator-based-on-2FSK">
         <img src="https://img.shields.io/badge/Version-0.6.15-red.svg" alt="Version">
     </a>
-    <a href="https://github.com/Dafeigy/Wireless-Calculator-based-on-2FSK/blob/main/README.md">
+    <a href="https://github.com/Dafeigy/DysonSphere_Calculator/blob/main/README.md">
         <img src="https://img.shields.io/badge/Readme-Clickhere-yellow.svg" alt="README">
     </a>
     <a href="http://cybercolyce.cn/">
@@ -67,7 +67,7 @@
 
 # 🐟Todo List
 
-- [ ] ~~面向对象编程~~（json也算半个面向对象了是吧...）
+- [x] ~~面向对象编程~~（json也算半个面向对象了是吧...）
 - [ ] 递归结构实现（有点意思，可能会做，但意义不大）
 - [ ] GUI页面设计（~~Excel也算GUI~~打算PyQT5做）
 - [ ] 多语言（随缘,英文翻译比较麻烦）
