@@ -33,45 +33,31 @@
 
 这是一款模拟经营类游戏的辅助工具，用于帮助玩家计算产量所需的素材、能源以及机器数。**但是很遗憾的是现在仅支持用中文输入**😭
 
-This is a tool that help u manage the Resource in Game Dyson Sphere Project, but it's availuable with Chinese Input yet.
-
-# 🤬为什么你要一边用中文一边用英文来写
-
-因为我玩的是中文...但我日后或许有机会能完善英文版的。
-
-Maybe some day I will update a English.ver lol
-
-# 🌠我该怎么用&How to use it
+# 🌠我该怎么用
 
 有两种办法：
 
-## 1.如果你是python学习者/For Python Programmer👉
+## 1.如果你是python学习者👉
 
 在你的IDE中运行`main.py`文件即可，懂的都懂👍
 
-Just run `main.py`  in your python IDE like pycharm😀
-
-## 2.如果你和我一样懒/For people like me:👉
+## 2.如果你和我一样懒:👉
 
 **可以直接运行dist文件夹里的main.exe文件**。但是请注意：
 
-Just run `main.exe	` in `dist` folder, but **please remember:**
+
 
 <p align="center" style="font-size:40px">
    ❗那三个json文件不要删掉❗
 </p>
 
-<p align="center" style="font-size:40px">
-   ❗Please Don't Delete that three .json file❗
-</p>
-
 ## 运行截图：
 
-<img src="https://raw.githubusercontent.com/dafeigy/image/master/20210201001300.png" alt="image-20210201001300763"  />
+![image-20210222212328132](https://raw.githubusercontent.com/dafeigy/image/master/20210222212328.png)
 
 
 
-# 🙋‍后续有更新怎么办&About Updates
+# 🙋‍后续有更新怎么办
 
 问得好，本懒狗把数据保存在三个json文件里，更新的时候分别更新即可。
 
@@ -84,4 +70,10 @@ Just run `main.exe	` in `dist` folder, but **please remember:**
 - [ ] ~~面向对象编程~~（json也算半个面向对象了是吧...）
 - [ ] 递归结构实现（有点意思，可能会做，但意义不大）
 - [ ] GUI页面设计（~~Excel也算GUI~~打算PyQT5做）
-- [ ] 多语言（随缘,英文翻译比较麻烦）# DysonSphere-Calculator
+- [ ] 多语言（随缘,英文翻译比较麻烦）
+
+# 🎮有没有更加简单点告诉我怎么玩这个游戏的
+
+有的，`Dyson.md`这个文件有我的一周目总结（目前还未完成），希望能帮助到你。
+
+但游戏的乐趣是不断尝试和探索，希望这款优秀的游戏能带给你更多的乐趣！
