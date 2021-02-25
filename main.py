@@ -217,14 +217,13 @@ built_by = json.load(open('built_by.json', 'r', encoding='utf-8'))
 igo = ["处理器", "硫酸"]
 
 
-def advanced_recipes(name):
+def advanced_recipe(name):
     recipes[name] = advanced_recipes[name]
 
-
-advanced_recipes("碳纳米管")
-advanced_recipes("石墨烯")
-advanced_recipes("硫酸")
-advanced_recipes("有机晶体")
+advanced_recipe("碳纳米管")
+advanced_recipe("石墨烯")
+advanced_recipe("硫酸")
+advanced_recipe("有机晶体")
 
 
 def search_recipe(name, pcs, result, parent):
@@ -276,7 +275,6 @@ def main():
             consumption += e["sec"] * built_by[temp]["work"] * pcs
         else:
             n = pcs * 1 / built_by[temp]["speed"] * gen_speed
-        dep = ""
         dest = list(d["dest"])
         print(f"| {name:^29} |", f" {pcs:>6.2f} ", f"| {temp:^5} | ", f"{n:>5.2f} |", dest[0])
     printDarkGreen(
